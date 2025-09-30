@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --background: #000;
+    --textBlack: #000;
+    --text: #fff;
+    --background-white: #fff;
+    --fontFamily: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-white);
+}
+
+.container {
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .container-header {
+    width: 100%;
+    height: 460px;
+}
+
+.container .container-header header {
+    width: 100%;
+    height: auto;
+    padding: 15px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container .container-header header nav ul {
+    gap: 40px;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.container .container-header header nav ul li {
+    list-style: none;
+}
+
+.container .container-header header ul li a {
+    color: var(--textBlack);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: start;
+    font-family: var(--fontFamily);
+    text-decoration: none;
+}
+
+.btn  {
+    font-size: 13.9px;
+    padding: 9px 18px;
+    text-transform: uppercase;
+    border-radius: .5em;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: start;
+    font-family: var(--fontFamily);
+    border: 1px solid rgb(255, 152, 0);
+    transition: .3s ease;
+    white-space: middle;
+}
+
+.container-title {
+    width: 100%;
+    height: 386px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-title h1 {
+    color: var(--textBlack);
+    font-size: 101.25px;
+    font-weight: 800;
+    text-align: center;
+    transition: .3s ease;
+    font-family: var(--fontFamily);
+}
+
+/* Container - API */
+.container-api {
+    width: 100%;
+    height: 656px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(39, 43, 51);
+}
+
+.container-cards {
+    width: 1905px;
+    height: 494px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+.container-cards .card {
+    width: 600px;
+    height: 220px;
+    border: 1px solid white;
+}
+
+/* Footer */
+.container footer {
+    width: 100%;
+    height: 392.94px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(32, 35, 41);
+    color: rgb(158, 158, 158);
+}
+
+.container-footer {
+    width: 300px;;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 0px 15px;
+}
+
+.description-footer span {
+    gap: 5px;
+    color: #ccc;
+    font-size: 13.5px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontFamily);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.description-footer span .icon {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: rgb(85, 204, 68);
+}
+
+.description-footer span:hover {
+    color: #f08d49;
+}
+
+.plataforms {
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 15px;
+}
+
+.networks {
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 25px;
+}
+
+.copy {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.copy a {
+    color: var(--text);
+    font-size: 13.5px;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--fontFamily);
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.copy a span {
+    color: #f08d49;
+    font-weight: 700;
+    font-family: var(--fontFamily);
+}
+
+/* Laptop mediana (≤1200px) */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .container-title h1 {
+    font-size: 2.2rem;
+  }
+
+  .card figure {
+    height: 180px;
+  }
+}
+
+/* Tablets (≤992px) */
+@media (max-width: 992px) {
+  nav ul {
+    gap: 1rem;
+  }
+
+  .container-title h1 {
+    font-size: 2rem;
+  }
+
+  .card figure {
+    height: 160px;
+  }
+
+  .description-footer {
+    gap: 0.5rem;
+  }
+}
+
+/* Celulares grandes (≤768px) */
+@media (max-width: 768px) {
+  /* Header → solo logo */
+  header {
+    justify-content: center;
+  }
+
+  header nav {
+    display: none; /* oculta menú */
+  }
+
+  /* Título */
+  .container-title h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  /* Cards en una sola columna si es necesario */
+  .container-cards {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  /* Footer en columnas */
+  .description-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+  }
+
+  .plataforms {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Celulares pequeños (≤480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  /* Título más pequeño */
+  .container-title h1 {
+    font-size: 1.3rem;
+  }
+
+  /* Cards */
+  .card figure {
+    height: 140px;
+  }
+
+  .info-card {
+    padding: 0.6rem;
+  }
+
+  .container-name h2 {
+    font-size: 1rem;
+  }
+
+  .container-name span,
+  .container-location span,
+  .container-seen span {
+    font-size: 0.8rem;
+  }
+
+  /* Footer compacto */
+  .description-footer span {
+    font-size: 0.8rem;
+  }
+}
